@@ -1,0 +1,8 @@
+{
+  "name": "hello-kuro",
+  "version": "1.0.0",
+  "bin": {
+    "hello-kuro": "index.js"
+  },
+  "license": "MIT"
+}
