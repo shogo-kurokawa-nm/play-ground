@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",             // 出力される JavaScript のバージョン
+      "module": "CommonJS",           // モジュール形式
+      "rootDir": "app",               // ソースコードのルート
+      "outDir": "dist",               // コンパイル後の出力ディレクトリ
+      "strict": true,                 // 厳密な型チェック
+      "esModuleInterop": true         // ES モジュールと CommonJS の互換性を有効化
+    },
+    "include": ["app/**/*.ts"],       // 対象ファイル
+    "exclude": ["node_modules"]       // 除外ファイル
+  }
+  
