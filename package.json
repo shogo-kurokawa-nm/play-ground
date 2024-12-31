@@ -1,18 +1,20 @@
 {
   "name": "hello-kuro",
   "version": "1.0.0",
-  "main": "dist/index.js", 
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node dist/index.js", 
-    "build": "tsc",             
-    "dev": "ts-node app/index.ts" 
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "ts-node app/index.ts"
   },
   "license": "MIT",
   "dependencies": {
+    "@hono/node-server": "^1.13.7",
     "hono": "^4.6.15"
   },
   "devDependencies": {
-    "typescript": "^5.2.2",
-    "ts-node": "^10.9.1" 
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   }
 }
