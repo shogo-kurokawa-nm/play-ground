@@ -1,0 +1,17 @@
+steps:
+  # 1. Docker イメージをビルド
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'asia-northeast1-docker.pkg.dev/kuro-test-446209/kuro-reg/test-app:latest'
+      - '.'
+
+  # 2. Artifact Registry にプッシュ
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - 'asia-northeast1-docker.pkg.dev/kuro-test-446209/kuro-reg/test-app:latest'
+
+images:
+  - 'asia-northeast1-docker.pkg.dev/kuro-test-446209/kuro-reg/my-app:latest'
