@@ -14,7 +14,7 @@ steps:
       - 'asia-northeast1-docker.pkg.dev/kuro-test-446209/kuro-reg/test-app:latest'
 
 images:
-  - 'asia-northeast1-docker.pkg.dev/kuro-test-446209/kuro-reg/my-app:latest'
+  - 'asia-northeast1-docker.pkg.dev/kuro-test-446209/kuro-reg/test-app:latest'
 
 options:
   logging: CLOUD_LOGGING_ONLY
